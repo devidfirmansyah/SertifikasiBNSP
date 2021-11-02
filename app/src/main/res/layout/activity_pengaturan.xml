@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaturanActivity"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti Password"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Lama"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/setting_pass_lama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password Lama"
+            android:padding="10dp"
+            android:background="@drawable/inputcustom"
+            android:drawableEnd="@drawable/ic_pass"
+            android:ems="15"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Baru"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/setting_pass_baru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password Baru"
+            android:padding="10dp"
+            android:background="@drawable/inputcustom"
+            android:drawableEnd="@drawable/ic_pass"
+            android:ems="15"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/setting_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Simpan" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#808080"
+            android:onClick="toHome"
+            android:text="Kembali" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/depid"
+            android:layout_alignParentLeft="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang Aplikasi"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="10pt"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi ini dibuat oleh:\nNama\t\t: Devid Firmansyah\nNIM\t\t\t : 1741720110"
+                android:textSize="8pt"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
